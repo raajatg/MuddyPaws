@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <title>Product Browsing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- Upper Header -->
+  <header id="banner-grid">
+
+    <!-- Main Logo -->
+        <div class="logo">
+          <img class="logo-pic" src="Images/Muddy Paws Logo.svg"/>
+        </div>
+    
+    <!-- Upper Navigatin with Account and Help -->
+        <div class="top-nav">
+          <h5 class="purple">Welcome, Timothy!</h5>
+          <h5 class="dark-purple"><img class="icon" src="Images/Account.svg"/>Account</h5>
+          <h5 class="dark-purple"><img class="icon" src="Images/Help.svg"/>Help</h5>
+        </div>
+    
+    <!-- Search and Cart Features -->
+        <div class="mid-nav">
+          <div class="search">
+            <h5>Search</h5>
+            <img src="Images/Search.svg"/>
+          </div>
+          <div class="shopping">
+            <div class="cart-nav">
+              <img class="icon" src="Images/Cart.svg">
+              <h3 class="purple">Cart (0)</h3>
+            </div>
+            <div class="shopping-features">
+                <h4 class="purple no-margins"><img class="icon" src="Images/Heart-Filled.svg">Wishlist</h4>
+                <h4 class="purple no-margins"><img class="icon" src="Images/Compare.svg">Compare</h4>
+            </div>
+          </div>
+        </div>
+    
+    <!-- Dropdown Menus -->
+        <div class="bottom-nav">
+          <div class="dropdowns">
+            <div class="dog-dropdown">
+              <h3 class="white">Shop for Dogs</h3>
+              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+            </div>
+            <div class="cat-dropdown">
+              <h3 class="white">Shop for Cats</h3>
+              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+            </div>
+            <div class="product-dropdown">
+              <h3 class="white">Shop by Product</h3>
+              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+            </div>
+            <div class="all-products">
+              <h3 class="white">All Products</h3>
+            </div>
+          </div>
+        </div>
+    
+    <!-- Shipping Info  -->
+        <div class="shipping-banner">
+          <h5 class="white no-margins">FREE 1-2 DAY SHIPPING ON ORDERS OVER $50</h5>
+        </div>
+    
+      </header>
+
+    <!-- Product Details and Specification Selection  -->  
+    <div id="detailed-product-view">
+      <p class="site-trail grey">Home / Cats / Cat Harness</p>
+      <div id="product-specs">
+          <div id="cat-card-harness" class="product-detailed-image"></div>
+          
+          <div class="product-overview">
+            <h3 class=" no-margins dark-purple">Cat Harness</h3>
+            <div class="rating-stars">
+                <img class ="filled-star" src="Images/star-black.svg"/>
+                <img class ="filled-star" src="Images/star-black.svg"/>
+                <img class ="filled-star" src="Images/star-black.svg"/>
+                <img class ="filled-star" src="Images/star-black.svg"/>
+                <img class ="filled-star" src="Images/star-black.svg"/>
+            </div>
+            <h5 class='dark-purple no-margins'>
+                $19.99
+            </h5>
+            </div>
+
+            <div class="spec-selection">
+                <p class="dark-grey">Select specifications and add to cart. If you created a pet account, select it below to auto-populate specifications:</p>
+                <div class="product-spec-row">
+                    <div class="spec-name"><h5 class="dark-grey">Your Pets:</h5></div>
+                    <div class="boris product-detail-icon"></div>
+                    <div class="ted product-detail-icon"></div>
+                    <div class="ernie product-detail-icon"></div>
+                    <div class="no-pet product-detail-icon">
+                        <p>N/A</p>
+                    </div>
+                </div>
+
+                <div class="product-spec-row">
+                    <div class="spec-name"><h5 class="dark-grey">Color:</h5></div>
+                    <div class="strawberry product-detail-icon"></div>
+                    <div class="blackberry product-detail-icon"></div>
+                    <div class="crazyberry product-detail-icon"></div>
+                    <div class="fire-orange product-detail-icon">
+                    </div>
+                </div>
+
+                <div class="product-spec-row">
+                    <div class="spec-name"><h5 class="dark-grey">Size:</h5></div>
+                    <div class="product-size-icon">
+                        <h5>XS</h5>
+                    </div>
+                    <div class="product-size-icon">
+                        <h5>S</h5>
+                    </div> 
+                    <div class="product-size-icon">
+                        <h5>M</h5>
+                    </div>
+                    <div class="product-size-icon">
+                        <h5>L</h5>
+                    </div>
+                </div>
+
+                <div class="product-spec-row">
+                    <div class="spec-name"><h5 class="dark-grey">Quantity:</h5></div>
+                    <input type="number" id="product-quantity" name="quantity" min="1" max="99">
+                </div>
+            </div>
+
+            <div id="product-selection-buttons">
+                <button id="add-to-cart-big" class="greyed-out">
+                    <h3 class="white">Add to Cart</h3>
+                </button>
+                <button id="wishlist-button-big" class="yellow-button">
+                    <h3 class="white">Add to Wishlist</h3>
+                    <img src="Images/Heart-Unfilled.svg"/>
+                </button>
+                <button id="compare-button-big" class="yellow-button">
+                    <h3 class="white">Compare Products</h3>
+                    <img src="Images/compare-white.svg"/>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    <div class="footer">
+        <p class="white">Copyright © 2020 Muddy Paws, Inc.</p>
+      </div>
+
+    </body>
+</html>
