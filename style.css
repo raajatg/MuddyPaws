@@ -7,10 +7,19 @@ html, body {
 
 /* Fonts */
 
+p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: calc(19em/14);
+    margin: 5px;
+}
+
 h5 {
     font-style: normal;
     font-weight: bold;
     font-size: calc(16em/14); 
+    
     line-height: calc(19em/14);
     margin: 5px;
 }
@@ -33,7 +42,6 @@ h3 {
     font-feature-settings: 'liga' off;
     vertical-align: middle;
 }
-
 h2 {
     font-style: normal;
     font-weight: bold;
@@ -43,17 +51,48 @@ h2 {
     margin: 0px;
 }
 
-p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: calc(19em/14);
-    margin: 5px;
+/* Limits on responsive font size to prevent awkward sizes */
+
+@media screen and (min-width: 1600px) {
+    p {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h3 {
+       font-size: 28px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+
 }
 
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 12px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h3 {
+       font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+}
 .no-margins {
-    line-height: 0px;
-    margin: 5px;
+    line-height: 100%;
+    margin: 5px 0px;
 }
 
 /* Colors */
@@ -72,6 +111,10 @@ p {
 
 .dark-grey {
     color: #1e2429;
+}
+
+.grey {
+    color: #8995A0;
 }
 
 /* Components */
@@ -428,6 +471,257 @@ p {
             background-image: url('/Images/Jamie-Barney.jpeg');
         }
 
+/*Product Browsing */
+ 
+#product-browsing {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 35px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+#product-filtering {
+    grid-row: 1/20;
+    grid-column: 1/3;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(20, 35px);
+    grid-gap: 20px;
+    border-right: 1px solid #8995A0;
+}
+
+    #product-filtering h3 {
+        grid-row: 2;
+        grid-column: 1/3;
+        align-self: center;
+    }
+
+    #product-filtering .filter-cardstack {
+        grid-row: 3/15;
+        grid-column: 1/3;
+       
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+        justify-content: flex-start;
+    }
+
+    .filter-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0.5em 0em;
+        margin-right: 10px;
+        margin-bottom: 1em;
+        background-color: #eff3f5;
+    }
+
+        .filter-card .filter-title-down {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .filter-card .filter-title-up {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .filter-title-up .icon {
+                transform: rotate(180deg);
+                padding-left: 5px;
+                padding-right: 0px;
+            }
+
+        /*Creating a checkbox filtering system*/
+
+            /* Customize the label (the container) */
+            .filter-item {
+                display: block;
+                position: relative;
+                padding-left: 2em;
+                margin-bottom: 0.25em;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                text-align: left;
+            }
+            
+            /* Hide the browser's default checkbox */
+            .filter-item input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            
+            /* Create a custom checkbox */
+            .checkmark {
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                left: 0.5em;
+                height: 1.5em;
+                width: 1.5em;
+                background-color: #c4c4c4;
+            }
+            
+            /* On mouse-over, add a grey background color */
+            .filter-item:hover input ~ .checkmark {
+                background-color: #8D4AC2;
+            }
+            
+            /* When the checkbox is checked, add a blue background */
+            .filter-item input:checked ~ .checkmark {
+                background-color: #8d4ac2;
+            }
+            
+            /* Create the checkmark/indicator (hidden when not checked) */
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            
+            /* Show the checkmark when checked */
+            .filter-item input:checked ~ .checkmark:after {
+                display: block;
+            }
+            
+            /* Style the checkmark/indicator */
+            .filter-item .checkmark:after {
+                left: 0.5em;
+                top: 0.08em;
+                width: 0.3em;
+                height: 0.9em;
+                border: solid white;
+                border-width: 0 0.25em 0.25em 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+#product-cards {
+    grid-row: 1/20;
+    grid-column: 3/13;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 35px);
+    grid-gap: 20px;
+}
+
+    #product-cards .site-trail {
+        grid-row: 1;
+        grid-column: 1/10;
+        align-self: end;
+    }
+
+    #product-cards .banner {
+        grid-row: 2/5;
+        grid-column: 1/11;
+        background-color: #eff3f5;
+        margin-right: -20px;
+
+        display: grid;
+        grid-template-rows: repeat(3, 35px);
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 20px;
+        padding-right: 20px;
+    }
+
+        #product-cards .banner h2 {
+            grid-row: 2;
+            grid-column: 1/4;
+            align-self: center;
+            padding: 0.5em;
+            z-index: 3;
+        }
+
+        .banner-polygon {
+            grid-row: 1/4;
+            grid-column: 1/5;
+            width: 5fr;
+            height: 0;
+            border-top: 145px solid #eff3f5;
+            border-right: 7vw solid transparent;
+            z-index: 2;
+            }
+        
+        #product-cards .banner .banner-image {
+            grid-row: 1/4;
+            grid-column: 3/11;
+            margin-right: -20px;
+            background-size: cover;
+            background-position: center center;
+            background-image: url('/Images/cats-banner.jpeg');
+            z-index: 1;
+        }
+
+        #product-cards #product-card-area {
+            grid-row: 6/13;
+            grid-column: 1/11;
+            margin-right: -20px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+            #product-card-area .product-card {
+                width: 31%;
+                min-width: 337px;
+                max-width: 450px;
+                height: 365px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: left;
+                padding-left: 5px;
+            }
+
+            .product-card .product-image {
+                background-size:cover;
+                background-position: center center;
+                width: calc(200%/3);
+                height: calc(500%/7);
+            }
+
+                #cat-card-harness .product-image {
+                    background-image: url('/Images/cat-harness.jpeg');
+                }
+
+                #cat-card-food-storage-attachment .product-image {
+                    background-image: url('/Images/cat-food-storage-attachment.jpeg');
+                }
+
+                #cat-card-water-storage-attachment .product-image {
+                    background-image: url('/Images/cat-water-storage-attachment.jpeg');
+                }
+
+                #cat-card-tracker-collar .product-image {
+                    background-image: url('/Images/cat-collar.jpeg');
+                }
+
+                #cat-card-backpack .product-image {
+                    background-image: url('/Images/cat-backpack.jpeg');
+                }
+
+            .product-card .product-overview {
+                width: 98%;
+                height: calc(200%/7);
+                background-color: #eff3f5;
+                padding-left: 5px;
+                margin-top: 20px;
+                border-top: 1px solid #8995A0;
+                border-bottom: 1px solid #8995A0;
+            }
 
 /*Footer*/
 
