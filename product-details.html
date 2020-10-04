@@ -2,74 +2,83 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Browsing</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="main.js"></script>
 </head>
-    <body>
-        <!-- Upper Header -->
-  <header id="banner-grid">
 
-    <!-- Main Logo -->
-        <div class="logo">
-          <a href="index.html">
-              <img class="logo-pic" src="Images/Muddy Paws Logo.svg"/>
+<body>
+
+    <!-- Upper Header -->
+    <header id="banner-grid">
+
+        <!-- Main Logo -->
+            <a href="index.html">
+                <div class="logo">
+                        <img class="logo-pic" src="Images/Muddy Paws Logo.svg"/>        
+                </div>
             </a>
-        </div>
-    
-    <!-- Upper Navigatin with Account and Help -->
-        <div class="top-nav">
-          <h5 class="purple">Welcome, Timothy!</h5>
-          <h5 class="dark-purple"><img class="icon" src="Images/Account.svg"/>Account</h5>
-          <h5 class="dark-purple"><img class="icon" src="Images/Help.svg"/>Help</h5>
-        </div>
-    
-    <!-- Search and Cart Features -->
-        <div class="mid-nav">
-          <div class="search">
-            <h5>Search</h5>
-            <img src="Images/Search.svg"/>
-          </div>
-          <div class="shopping">
-            <div class="cart-nav">
-              <img class="icon" src="Images/Cart.svg">
-              <h3 class="purple">Cart (0)</h3>
+        
+        <!-- Upper Navigatin with Account and Help -->
+            <div class="top-nav">
+            <h5 class="purple">Welcome, Timothy!</h5>
+            <h5 class="dark-purple"><img class="icon" src="Images/Account.svg"/>Account</h5>
+            <h5 class="dark-purple"><img class="icon" src="Images/Help.svg"/>Help</h5>
             </div>
-            <div class="shopping-features">
-                <h4 class="purple no-margins"><img class="icon" src="Images/Heart-Filled.svg">Wishlist</h4>
-                <h4 class="purple no-margins"><img class="icon" src="Images/Compare.svg">Compare</h4>
+        
+        <!-- Search and Cart Features -->
+            <div class="mid-nav">
+            <!-- Search Bar -->
+            <div class="search">
+                <h5>Search</h5>
+                <img src="Images/Search.svg"/>
             </div>
-          </div>
-        </div>
-    
-    <!-- Dropdown Menus -->
-        <div class="bottom-nav">
-          <div class="dropdowns">
-            <div class="dog-dropdown">
-              <h3 class="white">Shop for Dogs</h3>
-              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+            <!-- Cart + Wishlist + Compare -->
+            <div class="shopping">
+                <div class="cart-nav">
+                <img class="icon" src="Images/Cart.svg">
+                <h3 class="purple">Cart (0)</h3>
+                </div>
+                <div class="shopping-features">
+                    <h4 class="purple no-margins"><img class="icon" src="Images/Heart-Filled.svg">Wishlist</h4>
+                    <h4 class="purple no-margins"><img class="icon" src="Images/Compare.svg">Compare</h4>
+                </div>
             </div>
-            <div class="cat-dropdown">
+            </div>
+        
+        <!-- Dropdown Menus -->
+            <div class="bottom-nav">
+            <div class="dropdowns">
+                <!-- Dog Dropdown -->
+                <div class="dog-dropdown">
+                <h3 class="white">Shop for Dogs</h3>
+                <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+                </div>
+                <!-- Cat Dropdown -->
+                <div class="cat-dropdown">
                 <a href="product-browsing.html"><h3 class="white">Shop for Cats</h3></a>
-              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+                <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+                </div>
+                <!-- Product Dropdown -->
+                <div class="product-dropdown">
+                <h3 class="white">Shop by Product</h3>
+                <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
+                </div>
+                <!-- All Products -->
+                <div class="all-products">
+                <h3 class="white">All Products</h3>
+                </div>
             </div>
-            <div class="product-dropdown">
-              <h3 class="white">Shop by Product</h3>
-              <img class="arrow" src="Images/Drop-Down-Arrow.svg"/>
             </div>
-            <div class="all-products">
-              <h3 class="white">All Products</h3>
+        
+        <!-- Shipping Info  -->
+            <div class="shipping-banner">
+            <h5 class="white no-margins">FREE 1-2 DAY SHIPPING ON ORDERS OVER $50</h5>
             </div>
-          </div>
-        </div>
-    
-    <!-- Shipping Info  -->
-        <div class="shipping-banner">
-          <h5 class="white no-margins">FREE 1-2 DAY SHIPPING ON ORDERS OVER $50</h5>
-        </div>
-    
-      </header>
+        
+    </header>
 
     <!-- Product Details and Specification Selection  -->  
     <div id="detailed-product-view">
@@ -148,7 +157,7 @@
     </div>
 
     <div id="product-detail-collapsibles">
-        <button type="button" class="collapsible" onclick="collapsibleInteraction(0)">Product Details<img id="arrow" src="Images/Arrow-Up.svg"/></button>
+        <button type="button" class="collapsible" onclick="collapsibleInteraction(0)">Product Details<img id="arrow0" src="Images/Arrow-Up.svg"/></button>
         <div class="content">
             <div class="expanded-content">
                 <div class="left-side product">
@@ -165,7 +174,7 @@
             </div>
         </div>
         
-        <button type="button" class="collapsible" onclick="collapsibleInteraction(1)">Sizing Guide<img id="arrow" src="Images/Arrow-Up.svg"/></button>
+        <button type="button" class="collapsible" onclick="collapsibleInteraction(1)">Sizing Guide<img id="arrow1" src="Images/Arrow-Up.svg"/></button>
         <div class="content">
             <div class="expanded-content">
                 <div class="left-side size">
@@ -184,7 +193,7 @@
             </div>    
         </div>
         
-        <button type="button" class="collapsible" onclick="collapsibleInteraction(2)">Customer Reviews<img id="arrow" src="Images/Arrow-Up.svg"/></button>
+        <button type="button" class="collapsible" onclick="collapsibleInteraction(2)">Customer Reviews<img id="arrow2" src="Images/Arrow-Up.svg"/></button>
         <div class="content">
             <div class="expanded-content">
                 <div class="left-side reviews">
