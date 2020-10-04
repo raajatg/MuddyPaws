@@ -877,13 +877,13 @@ a .logo {
         .product-detailed-image {
             grid-row: 1/8;
             grid-column: 1/4;
-            overflow: hidden;
+
+            background-size:cover;
+            background-position: center center;
         }
 
-        .product-detailed-image img{
-            max-width: auto;
-            height: 100%;
-            position: center center;
+        #cat-card-harness.product-detailed-image {
+            background-image: url('/Images/cat-harness.jpeg');
         }
 
         #product-specs .product-overview {
