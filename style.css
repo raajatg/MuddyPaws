@@ -29,7 +29,6 @@ h5 {
 }
 
 h4 {
-    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: calc(18em/14); 
@@ -175,7 +174,6 @@ h2 {
 
 .testimonial-frame {
     border-radius: 50%;
-    width: 1.5fr;
     padding-top: 100%;
     margin-bottom: 10px;
     background-size: cover;
@@ -658,9 +656,6 @@ a .logo {
                 position: relative;
                 padding-left: 2em;
                 margin-bottom: 0.25em;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
                 user-select: none;
                 text-align: left;
             }
@@ -678,7 +673,6 @@ a .logo {
             .checkmark {
                 position: absolute;
                 top: 50%;
-                -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
                 left: 0.5em;
                 height: 1em;
@@ -716,8 +710,6 @@ a .logo {
                 height: 0.6em;
                 border: solid white;
                 border-width: 0 0.2em 0.2em 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
 
@@ -764,7 +756,6 @@ a .logo {
         .banner-polygon {
             grid-row: 1/4;
             grid-column: 1/5;
-            width: 5fr;
             height: 0;
             border-top: 145px solid #eff3f5;
             border-right: 7vw solid transparent;
@@ -808,7 +799,6 @@ a .logo {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                align-items: left;
                 padding-left: 5px;
             }
 
@@ -824,7 +814,6 @@ a .logo {
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
-                align-items: left;
                 padding-left: 0px;
             }
 
@@ -864,7 +853,6 @@ a .logo {
                 .product-image img {
                     object-fit: cover;
                     width: 100%;
-                    position: center center;
                     z-index: 1;
                     transition: transform 1s ease;
                 }
