@@ -5,7 +5,7 @@ html, body {
     font-size: 0.98vw;
 }
 
-/* Fonts */
+/* FONTS */
 
 a {
     text-decoration: none;
@@ -99,7 +99,7 @@ h2 {
     margin: 5px 0px;
 }
 
-/* Colors */
+/* COLORS */
 
 .purple {
     color: #8D4AC2;
@@ -160,7 +160,7 @@ h2 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Pictures */
+/* PICTURES */
 
 .icon {
     padding-right: 5px;
@@ -194,7 +194,7 @@ h2 {
     filter: invert(86%) sepia(0%) saturate(0%) hue-rotate(54deg) brightness(95%) contrast(87%); 
 }
 
-/* Header */
+/* HEADER */
 
 #banner-grid {
    display: grid;
