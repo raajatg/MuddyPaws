@@ -462,7 +462,7 @@ a .logo {
     }
 
         .testimonial-card-1 .testimonial-frame {
-            background-image: url('/Images/Ronnie-Toby.jpeg');
+            background-image: url('./Images/Ronnie-Toby.jpeg');
         }
 
     .testimonial-card-2 {
@@ -476,7 +476,7 @@ a .logo {
     }
 
         .testimonial-card-2 .testimonial-frame {
-            background-image: url('/Images/Debbie-Bingo.jpeg');
+            background-image: url('./Images/Debbie-Bingo.jpeg');
         }
 
     .testimonial-card-3 {
@@ -490,7 +490,7 @@ a .logo {
     }
 
         .testimonial-card-3 .testimonial-frame {
-            background-image: url('/Images/Jim-Pam.jpeg');
+            background-image: url('./Images/Jim-Pam.jpeg');
         }
 
     .testimonial-card-4 {
@@ -504,7 +504,7 @@ a .logo {
     }
 
         .testimonial-card-4 .testimonial-frame {
-            background-image: url('/Images/Jamie-Barney.jpeg');
+            background-image: url('./Images/Jamie-Barney.jpeg');
         }
 
 /*Product Browsing */
@@ -706,7 +706,7 @@ a .logo {
             margin-right: -20px;
             background-size: cover;
             background-position: center center;
-            background-image: url('/Images/cats-banner.jpeg');
+            background-image: url('./Images/cats-banner.jpeg');
             z-index: 1;
         }
 
@@ -798,22 +798,22 @@ a .logo {
                 }
 
                 #cat-card-food-storage-attachment .product-image {
-                    background-image: url('/Images/cat-food-storage-attachment.jpeg');
+                    background-image: url('./Images/cat-food-storage-attachment.jpeg');
                     transition: transform .5s ease;
                 }
 
                 #cat-card-water-storage-attachment .product-image {
-                    background-image: url('/Images/cat-water-storage-attachment.jpeg');
+                    background-image: url('./Images/cat-water-storage-attachment.jpeg');
                     transition: transform .5s ease;
                 }
 
                 #cat-card-tracker-collar .product-image {
-                    background-image: url('/Images/cat-collar.jpeg');
+                    background-image: url('./Images/cat-collar.jpeg');
                     transition: transform .5s ease;
                 }
 
                 #cat-card-backpack .product-image {
-                    background-image: url('/Images/cat-backpack.jpeg');
+                    background-image: url('./Images/cat-backpack.jpeg');
                     transition: transform .5s ease;
                 }
 
@@ -883,7 +883,7 @@ a .logo {
         }
 
         #cat-card-harness.product-detailed-image {
-            background-image: url('/images/cat-harness.jpeg');
+            background-image: url('./images/cat-harness.jpeg');
         }
 
         #product-specs .product-overview {
@@ -945,15 +945,15 @@ a .logo {
                     }
 
                     .product-detail-icon.boris {
-                        background-image: url(/Images/boris.jpeg);
+                        background-image: url(./Images/boris.jpeg);
                     }
 
                     .product-detail-icon.ted {
-                        background-image: url(/Images/ted.jpeg);
+                        background-image: url(./Images/ted.jpeg);
                     }
 
                     .product-detail-icon.ernie {
-                        background-image: url(/Images/ernie.jpeg);
+                        background-image: url(./Images/ernie.jpeg);
                     }
 
                     .product-detail-icon.no-pet {
